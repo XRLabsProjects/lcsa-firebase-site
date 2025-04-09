@@ -1,0 +1,56 @@
+City,Category,Item,Acronym,Value,X,Y 
+Delhi,LCA,Global Warming Potential,GWP,1,77.171695,28.627393
+Delhi,LCA,Ozone Depletion,ODP,0.93,77.171695,28.627393
+Delhi,LCA,Particulate Matter,PM,0.87,77.171695,28.627393
+Delhi,LCA,Human Toxicity (non-cancer),HTP,0.89,77.171695,28.627393
+Delhi,LCA,Terrestrial Acidification,AP,0.92,77.171695,28.627393
+Delhi,LCA,Freshwater Eutrophication,EP,0.94,77.171695,28.627393
+Delhi,LCA,Resource use (fossils),ADP,0.94,77.171695,28.627393
+Delhi,S-LCA,Public commitment to sustainability issues,PCSI,0.98,77.171695,28.627393
+Delhi,LCC,Initial Capital Cost,CC,1,77.171695,28.627393
+Delhi,LCC,Operation and Maintenance Cost,OC,0.9,77.171695,28.627393
+Delhi,LCC,Disposal Cost,DC,0.0,77.171695,28.627393
+Chennai,LCA,Global Warming Potential,GWP,0.9,80.283833,13.080172
+Chennai,LCA,Ozone Depletion,ODP,1.0,80.283833,13.080172
+Chennai,LCA,Particulate Matter,PM,1.0,80.283833,13.080172
+Chennai,LCA,Human Toxicity (non-cancer),HTP,1.0,80.283833,13.080172
+Chennai,LCA,Terrestrial Acidification,AP,1.0,80.283833,13.080172
+Chennai,LCA,Freshwater Eutrophication,EP,1.0,80.283833,13.080172
+Chennai,LCA,Resource use (fossils),ADP,1.0,80.283833,13.080172
+Chennai,S-LCA,Public commitment to sustainability issues,PCSI,1,80.283833,13.080172
+Chennai,LCC,Initial Capital Cost,CC,0.64,80.283833,13.080172
+Chennai,LCC,Operation and Maintenance Cost,OC,1,80.283833,13.080172
+Chennai,LCC,Disposal Cost,DC,0.01,80.283833,13.080172
+Indore,LCA,Global Warming Potential,GWP,0.94,75.8682,22.720362
+Indore,LCA,Ozone Depletion,ODP,1,75.8682,22.720362
+Indore,LCA,Particulate Matter,PM,1,75.8682,22.720362
+Indore,LCA,Human Toxicity (non-cancer),HTP,1,75.8682,22.720362
+Indore,LCA,Terrestrial Acidification,AP,1,75.8682,22.720362
+Indore,LCA,Freshwater Eutrophication,EP,1,75.8682,22.720362
+Indore,LCA,Resource use (fossils),ADP,1,75.8682,22.720362
+Indore,S-LCA,Public commitment to sustainability issues,PCSI,0.88,75.8682,22.720362
+Indore,LCC,Initial Capital Cost,CC,1,75.8682,22.720362
+Indore,LCC,Operation and Maintenance Cost,OC,0.24,75.8682,22.720362
+Indore,LCC,Disposal Cost,DC,0.02,75.8682,22.720362
+Mumbai,LCA,Global Warming Potential,GWP,0.94,72.835335,18.938771
+Mumbai,LCA,Ozone Depletion,ODP,0.99,72.835335,18.938771
+Mumbai,LCA,Particulate Matter,PM,0.98,72.835335,18.938771
+Mumbai,LCA,Human Toxicity (non-cancer),HTP,0.92,72.835335,18.938771
+Mumbai,LCA,Terrestrial Acidification,AP,0.97,72.835335,18.938771
+Mumbai,LCA,Freshwater Eutrophication,EP,0.97,72.835335,18.938771
+Mumbai,LCA,Resource use (fossils),ADP,0.98,72.835335,18.938771
+Mumbai,S-LCA,Public commitment to sustainability issues,PCSI,0.98,72.835335,18.938771
+Mumbai,LCC,Initial Capital Cost,CC,1,72.835335,18.938771
+Mumbai,LCC,Operation and Maintenance Cost,OC,0.19,72.835335,18.938771
+Mumbai,LCC,Disposal Cost,DC,0.02,72.835335,18.938771
+Guwahati,LCA,Global Warming Potential,GWP,0.91,91.753943,26.180598
+Guwahati,LCA,Ozone Depletion,ODP,0.97,91.753943,26.180598
+Guwahati,LCA,Particulate Matter,PM,0.98,91.753943,26.180598
+Guwahati,LCA,Human Toxicity (non-cancer),HTP,0.97,91.753943,26.180598
+Guwahati,LCA,Terrestrial Acidification,AP,0.97,91.753943,26.180598
+Guwahati,LCA,Freshwater Eutrophication,EP,0.97,91.753943,26.180598
+Guwahati,LCA,Resource use (fossils),ADP,0.97,91.753943,26.180598
+Guwahati,S-LCA,Public commitment to sustainability issues,PCSI,0.80,91.753943,26.180598
+Guwahati,LCC,Initial Capital Cost,CC,1,91.753943,26.180598
+Guwahati,LCC,Operation and Maintenance Cost,OC,0.92,91.753943,26.180598
+Guwahati,LCC,Disposal Cost,DC,0.02,91.753943,26.180598

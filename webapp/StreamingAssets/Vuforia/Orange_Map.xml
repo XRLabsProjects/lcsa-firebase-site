@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="world_map_noise" size="29.700001 14.850000" />
+    <ImageTarget name="world_map_orange" size="29.700001 14.850000" />
+  </Tracking>
+</QCARConfig>
