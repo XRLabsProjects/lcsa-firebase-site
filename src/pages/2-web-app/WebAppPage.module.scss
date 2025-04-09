@@ -1,0 +1,26 @@
+@use "../../index.scss";
+
+.webapp {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.rotateDevice {
+  display: none;
+  margin-top: 10px;
+  align-items: end;
+  
+  p {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .rotateDevice {
+    display: flex;
+    
+    p {
+      font-size: 14px;
+    }
+  }
+}

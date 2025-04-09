@@ -1,0 +1,26 @@
+@use "../../index.scss";
+
+.footer {
+  width: 100%;
+  padding: 10px var(--page-margin-horizontal-xl);
+  font: var(--main-font);
+  font-size: 15px;
+}
+
+@media only screen and (max-width: index.$width-breakpoint-large) {
+  .footer {
+    padding: 10px var(--page-margin-horizontal-lg);
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-medium) {
+  .footer {
+    padding: 10px var(--page-margin-horizontal-med);
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .footer {
+    padding: 10px var(--page-margin-horizontal-sm);
+  }
+}

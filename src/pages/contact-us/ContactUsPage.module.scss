@@ -1,0 +1,124 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0 50px 0;
+    width: 75%;
+    
+    .topbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: black;
+      color: white;
+      padding: 0;
+      width: 100%;
+      
+      .emailIcon {
+        margin: 10px 15px;
+        width: 35px;
+      }
+      
+      p {
+        font-size: 16px;
+        padding: 0;
+        margin: 10px;
+      }
+    }
+    
+    .formContainer {
+      background: rgba(var(--default-page-colour), 0.15);
+      width: 100%;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 10%;
+  
+  .textField {
+    background: white;
+    width: 100%;
+    margin-bottom: 3px;
+    padding: 10px;
+
+    input {
+      outline: none;
+      border: none;
+      width: 100%;
+      font-size: 18px;
+      color: black;
+    }
+    
+    input::placeholder {
+      color: rgb(var(--default-page-colour));
+      font-style: italic;
+    }
+  }
+  
+  .messageField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+    
+    textarea {
+      margin-top: 10px;
+      padding: 10px;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      color: black;
+      min-height: 200px;
+      resize: none;
+    }
+
+    textarea::placeholder {
+      color: rgb(var(--default-page-colour));
+      font-style: italic;
+    }
+  }
+
+  .errorMessageContainer {
+    .errorText {
+      display: none;
+      color: red;
+    }
+  }
+  
+  .emailSentContainer {
+     .emailSentText {
+       display: none;
+       color: green;
+     }
+   }
+  
+  .submitButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+    .submitButton {
+      margin-top: 25px;
+      background: rgb(var(--default-page-colour));
+      border: none;
+      color: white;
+      padding: 14px 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  
+  .submitButton:hover {
+    background: rgba(var(--default-page-colour), 0.7);
+  }
+}

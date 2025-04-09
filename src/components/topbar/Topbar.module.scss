@@ -1,0 +1,85 @@
+@use "../../index.scss";
+
+.topbar {
+  width: 100%;
+  height: 40px;
+  font: var(--main-font);
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background: black;
+  color: white;
+  // TODO: padding should be flexible based on left page margin width
+  padding-left: var(--page-margin-horizontal-xl);
+
+  .email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .login {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // TODO: fixed width probably isn't good here
+
+    .loginId {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .divider {
+        height: 100%;
+        width: 1px;
+        background: white;
+      }
+    }
+
+    .homeButton {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 20px 0 20px;
+      background: rgb(var(--page-colour));
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-large) {
+  .topbar {
+    padding-left: var(--page-margin-horizontal-lg);
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-medium) {
+  .topbar {
+    padding-left: var(--page-margin-horizontal-med);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .topbar {
+    .email {
+      font-size: 12px;
+    }
+
+    .login {
+      width: 170px;
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .topbar {
+    display: none;
+  }
+}

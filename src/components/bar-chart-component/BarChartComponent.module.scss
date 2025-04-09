@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  .chart {
+    width: 100%;
+    
+    .yAxis {
+      font-size: 12px;
+    }
+  }
+}
+
+.tooltip {
+  background: white;
+  padding: 10px;
+  
+  p {
+    margin: 3px;
+  }
+}
+
+.legend {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+  .legendTextAlign {
+    width: 150px;
+    text-align: left;
+
+    .industryLegend {
+      color: rgb(var(--software-industry-colour-rgb));
+    }
+
+    .academiaLegend {
+      color: rgb(var(--software-academia-colour-rgb));
+    }
+  }
+}
+

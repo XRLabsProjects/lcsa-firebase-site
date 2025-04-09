@@ -1,0 +1,39 @@
+$width-breakpoint-large: 1550px;
+$width-breakpoint-medium: 1270px;
+$width-breakpoint-small: 658px;
+
+:root {
+  --page-margin-horizontal-xl: 20em;
+  --page-margin-horizontal-lg: 10em;
+  --page-margin-horizontal-med: 5em;
+  --page-margin-horizontal-sm: 1em;
+  --main-font: "Open Sans", "Helvetica", sans-serif;
+  --page-colour: 103, 169, 50;
+  --default-page-colour: 103, 169, 50;
+  --app-download-colour: 51, 120, 3;
+  --web-app-colour: 63, 141, 9;
+  --lcsa-data-colour: 89, 165, 34;
+  --tutorials-colour: 100, 171, 49;
+  --interactive-feedback-colour: 131, 190, 67;
+  --publications-colour: 150, 191, 26;
+  --our-team-colour: 101, 170, 51;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
+  scroll-padding-top: 94px; // this is hardcoded such that sidebar nav links line the titles up with the top of the sidebar
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+}

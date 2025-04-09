@@ -1,0 +1,33 @@
+.hamburgerMenu {
+  position: fixed;
+  margin-left: calc(-1 * var(--page-margin-horizontal-sm));
+  width: 100%;
+  list-style-type: none;
+  z-index: 100;
+  
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .item {
+    background: white;
+    //padding: 10px;
+    
+    .backgroundColour {
+      background: rgb(var(--page-colour));
+      
+      p {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
+  
+  .backgroundColour:hover {
+    cursor: pointer;
+    background:  rgba(var(--page-colour), 0.7);
+  }
+}

@@ -1,0 +1,74 @@
+@use "../../index.scss";
+
+.page {
+  .banner {
+    width: 100vw;
+    height: auto;
+    margin-left: calc(-1 * var(--page-margin-horizontal-xl));
+  }
+  
+  .cardGridPositioner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0;
+    
+    .cardContainer {
+      width: 100%;
+      max-width: 1400px;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 400px 400px 400px;
+      justify-content: center;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-large) {
+  .page {
+    .banner {
+      margin-left: calc(-1 * var(--page-margin-horizontal-lg));
+    }
+    
+    .cardGridPositioner {
+      .cardContainer {
+        grid-template-columns: 300px 300px 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-medium) {
+  .page {
+    .banner {
+      margin-left: calc(-1 * var(--page-margin-horizontal-med));
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .page {
+    .cardGridPositioner {
+      .cardContainer {
+        grid-template-columns: 300px 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .page {
+    .banner {
+      margin-left: calc(-1 * var(--page-margin-horizontal-sm));
+    }
+
+    .cardGridPositioner {
+      .cardContainer {
+        grid-template-columns: 300px;
+      }
+    }
+  }
+}

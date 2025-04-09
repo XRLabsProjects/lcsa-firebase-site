@@ -1,0 +1,26 @@
+@use "../../index.scss";
+
+.publication {
+  margin-bottom: 15px;
+  
+  p {
+   margin: 5px 0;
+    font-size: 15px;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .authors {
+    font-style: italic;
+  }
+  
+  .description {
+    
+  }
+  
+  .date {
+    font-weight: bold;
+  }
+}

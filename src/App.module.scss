@@ -1,0 +1,36 @@
+@use "./index.scss";
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  .pageContainer {
+    margin: 0 var(--page-margin-horizontal-xl);
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-large) {
+  .appContainer {
+    .pageContainer {
+      margin: 0 var(--page-margin-horizontal-lg);
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-medium) {
+  .appContainer {
+    .pageContainer {
+      margin: 0 var(--page-margin-horizontal-med);
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .appContainer {
+    .pageContainer {
+      margin: 0 var(--page-margin-horizontal-sm);
+    }
+  }
+}

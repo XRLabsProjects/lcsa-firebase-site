@@ -1,0 +1,231 @@
+@use "../../index.scss";
+
+.navbarContainer {
+  width: 100vw;
+  margin-left: calc(-1 * var(--page-margin-horizontal-xl));
+  padding-right: var(--page-margin-horizontal-xl);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  .navbar {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-left: var(--page-margin-horizontal-xl);
+    font: var(--main-font);
+    font-size: 15px;
+    color: black;
+    z-index: 1000;
+
+    .siteTitle {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+
+      .siteImage {
+        height: 60px;
+      }
+
+      h2 {
+        margin: 0 0 5px 0;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+
+      p {
+        margin: 0;
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+      
+    .navIcon {
+      height: 100%;
+    }
+
+    .navPages {
+      list-style: none;
+      display: flex;
+      font-size: 18px;
+      padding: 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+      }
+
+      li:hover {
+        color: rgb(var(--page-colour));
+      }
+
+      .searchBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        input {
+          width: 180px;
+          padding: 14px 20px;
+          color: rgb(var(--page-colour));
+          background-color: rgba(var(--page-colour), 0.3);
+          border: none;
+        }
+        
+        li:hover {
+          color: black;
+        }
+
+        input::placeholder {
+          color: rgb(var(--page-colour));
+        }
+
+        .searchIconContainer {
+          display: flex;
+          align-items: center;
+          background: black;
+          padding: 12px 10px;
+          cursor: pointer;
+
+          .searchIcon {
+            color: white;
+          }
+        }
+        
+      }
+    }
+
+    .hamburgerIcon {
+      display: none;
+    }
+  }
+
+  .hamburgerOpen, .hamburgerClosed {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-large) {
+  .navbarContainer {
+    margin-left: calc(-1 * var(--page-margin-horizontal-lg));
+    padding-right: var(--page-margin-horizontal-lg);
+    .navbar {
+      padding-left: var(--page-margin-horizontal-lg);
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-medium) {
+  .navbarContainer {
+    margin-left: calc(-1 * var(--page-margin-horizontal-med));
+    padding-right: var(--page-margin-horizontal-med);
+    .navbar {
+      padding-left: var(--page-margin-horizontal-med);
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .navbarContainer {
+    .navbar {
+      .siteTitle {
+        .siteImage {
+          height: 40px;
+        }
+
+        p {
+          font-weight: normal;
+          font-size: 12px;
+        }
+      }
+
+      .navPages {
+        list-style: none;
+        display: flex;
+        font-size: 14px;
+
+        a {
+          padding-right: 10px;
+        }
+
+        .searchBar {
+          input {
+            width: 118px;
+          }
+
+          .searchIconContainer {
+            .searchIcon {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .navbarContainer {
+    position: sticky;
+    top: 0;
+    margin-left: calc(-1 * var(--page-margin-horizontal-sm));
+    padding-right: var(--page-margin-horizontal-sm);
+    
+    .navbar {
+      padding-left: var(--page-margin-horizontal-sm);
+      margin: 0;
+      
+      .siteTitle {
+        p {
+          font-size: 11px;
+        }
+      }
+      
+      .navIcon {
+        display: none;
+      }
+
+      .navPages {
+        display: none;
+      }
+
+      .hamburgerIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .hamburgerIcon:hover {
+        color: rgb(var(--page-colour));
+      }
+    }
+
+    .hamburgerOpen {
+      display: inline;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navbarContainer {
+
+    .navbar {
+      padding: 0;
+      
+      .siteTitle {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}

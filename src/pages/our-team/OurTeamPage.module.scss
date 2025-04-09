@@ -1,0 +1,128 @@
+@use "../../index.scss";
+
+.page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  
+  .teamContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    .teamMain {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 400px 400px;
+      column-gap: 20px;
+      row-gap: 20px;
+      margin-bottom: 25px;
+      justify-content: center;
+    }
+    
+    .teamOther {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 200px 200px 200px 200px;
+      column-gap: 20px;
+      row-gap: 20px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  }
+}
+
+.teamMember {
+  font-size: 12px;
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 5px 0;
+  }
+
+  p {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+  }
+
+  .emailText {
+    color: rgb(var(--page-colour));
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: index.$width-breakpoint-large) {
+  .page {
+    .teamContainer {
+      .teamOther {
+        grid-template-columns: 200px 200px 200px 200px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .page {
+    .teamContainer {
+      .teamMain {
+        grid-template-columns: 360px 360px;
+      }
+      
+      .teamOther {
+        grid-template-columns: 180px 180px 180px;
+        column-gap: 10px;
+        
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .page {
+    .teamContainer {
+      .teamMain {
+        grid-template-columns: 250px 250px;
+      }
+      
+      .teamOther {
+        grid-template-columns: 180px 180px 180px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .page {
+    .teamContainer {
+      .teamMain {
+        grid-template-columns: 300px;
+      }
+      
+      .teamOther {
+        grid-template-columns: 180px 180px;
+        column-gap: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .page {
+    h2 {
+      text-align: center;
+    }
+    
+    .teamContainer {      
+      .teamOther {
+        grid-template-columns: 180px;
+        row-gap: 10px;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "../../index.scss";
+
+.pageContainer {
+  justify-content: center;
+  width: 100%;
+  
+  .pageContent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 1400px;
+    width: 100%;
+  }
+}
+
+.sidebarContainer {
+  
+}
+
+@media only screen and (max-width: 750px) {
+  .sidebarContainer {
+    display: none;
+  }
+}

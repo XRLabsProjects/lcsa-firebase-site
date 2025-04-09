@@ -1,0 +1,276 @@
+@use "../../index.scss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  
+  .backButtonContainer {
+    margin: 25px 0 40px 0;
+    width: 100%;
+  }
+  
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px 0;
+    width: 75%;
+    max-width: 800px;
+    justify-content: center;
+    
+    .topbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: black;
+      color: white;
+      padding: 0;
+      width: 100%;
+      
+      .writeIcon {
+        margin: 10px 15px;
+        width: 35px;
+      }
+      
+      .questionnaireTitle {
+        font-size: 16px;
+        padding: 0;
+        margin: 10px;
+      }
+    }
+    
+    .formContainer {
+      background: rgba(var(--page-colour), 0.15);
+      width: 100%;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 10%;
+  
+  .textField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+
+    textarea {
+      margin-top: 10px;
+      padding: 10px;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      color: black;
+      min-height: 110px;
+      resize: none;
+    }
+
+    textarea::placeholder {
+      color: rgb(var(--default-page-colour));
+      font-style: italic;
+    }
+  }
+  
+  .dropdownField {
+    background: white;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    //text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    select {
+      padding: 10px;
+      color: white;
+      background: black;
+    }
+  }
+  
+  .likertScaleList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    
+    div {
+      max-width: 500px;
+    }
+    
+    .likertListOptions {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      
+      div {
+        width: 100%;
+        
+        .checkboxContainer { }
+      }
+    }
+  }
+  
+  .confirmationContainer {
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  .submitButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+    .submitButton {
+      margin-top: 25px;
+      background: rgb(var(--page-colour));
+      border: none;
+      color: white;
+      padding: 14px 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  
+  .submitButton:hover {
+    background: rgba(var(--page-colour), 0.7);
+  }
+
+  .checkboxField {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    
+    p {
+      margin: 0;
+    }
+
+    input { // hide default
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border-color: rgb(var(--page-colour));
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1/1;
+      
+      .checkmarkSelected {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: rgb(var(--page-colour));
+        display: none;
+      }
+    }
+
+    input:checked ~ .checkmark {
+      .checkmarkSelected {
+        display: block;
+      }
+    }
+    
+    .questionText {
+      font-size: 16px;
+    }
+  }
+
+  .checkboxField:hover {
+    .checkmark {
+      background-color: rgb(var(--page-colour), 0.5);
+    }
+  }
+  
+  .ageConfirmationContainer {
+    width: 100%;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+}
+
+.required {
+  color: red;
+}
+
+.incorrectSubmissionPrompt {
+  margin-top: 15px;
+  color: red;
+  width: 100%;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+  .page {
+    .pageContainer {
+      .topbar {
+        .questionnaireTitle {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  .form {
+    .textField {
+      font-size: 14px;
+      
+      textarea {
+        font-size: 14px;
+      }
+    }
+    
+    .dropdownField {
+      font-size: 14px;
+    }
+    
+    .likertScaleList {
+      .likertListOptions {
+        display: block;
+        .checkboxField {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    
+    .checkboxField {
+      .questionText {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: index.$width-breakpoint-small) {
+  .form {
+    .dropdownField {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+}
